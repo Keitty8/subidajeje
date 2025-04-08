@@ -1,0 +1,705 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f2f2f2;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.content{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/*PAGINA PRINCIPAL*/
+
+.headerPrincipal{
+    width: 100%;
+    height: 600px;
+    background: url(../imagen/principal13.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position:relative;
+
+}
+
+header .menuIcono{
+    margin:2%;
+    /*margin-left: 10%;*/
+    border-radius: 30px;
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+
+header .logo{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: rgb(255, 255, 255);
+    text-shadow:
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+    font-weight: 1000;
+    font-size: 150%;
+    text-decoration: none;
+    margin-right: 20px;
+
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size:  70px;
+    color: black;
+    text-shadow:
+    -1px -1px 0 #ffffff,  
+     1px -1px 0 #ffffff,
+    -1px  1px 0 #ffffff,
+     1px  1px 0 #ffffff;
+}
+
+.textos-header h2{
+    font-size: 40px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#informacion {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f9f9f9; /* Color de fondo */
+}
+
+.contenidoInfo {
+    max-width: 1000px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenido horizontalmente */
+}
+
+.contenidoInfo h2 {
+    font-size: 30px; /* Tamaño de fuente del título */
+    color: #642a73; /* Color del título */
+    margin-bottom: 20px; /* Espaciado inferior del título */
+}
+
+.contenidoInfo p {
+    font-size: 16px; /* Tamaño de fuente del texto */
+    color: #333; /* Color del texto */
+    line-height: 1.6; /* Altura de línea */
+}
+
+
+/*about us*/
+
+.sobre-nosotros {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+}
+
+.sobre-nosotros .titulo {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.content-sobre-nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.content-sobre-nosotros .imagen-about-us {
+    flex: 1 1 45%;
+    max-width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    height: 500px; 
+}
+
+.content-sobre-nosotros .content-textos {
+    flex: 1 1 45%;
+    max-width: 45%;
+}
+
+.content-sobre-nosotros .content-textos h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #242424;
+}
+
+.content-sobre-nosotros .content-textos h3 span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: #8b0000; /* Color vino */
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    line-height: 24px;
+}
+
+.content-sobre-nosotros .content-textos p {
+    font-size: 16px;
+    color: #313131;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+/* ACERCA DE */
+
+.conocenos-contenedor {
+    padding: 10px;
+    text-align: center;
+}
+
+.conocenos-contenedor .titulo {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 700px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #fff;
+}
+
+.card .contenido-text-card {
+    padding: 20px;
+    text-align: left;
+}
+
+.card .contenido-text-card h4 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.card .contenido-text-card p {
+    margin: 0;
+    color: #212121;
+}
+
+.card .contenido-text-card ul {
+    padding-left: 20px;
+}
+
+.card .contenido-text-card ul li {
+    margin-bottom: 10px;
+}
+
+
+.contacto-desarrolladores {
+    margin-top: 80px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 60px;
+}
+
+.tituloSoporte{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 35px;
+}
+
+.contacto-desarrolladores h2 {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.informacion {
+    margin-bottom: 20px;
+}
+
+.foto-programador {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin-bottom: 20px;
+}
+
+.foto-programador img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.item img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.redes-sociales {
+    display: flex;
+    align-items: center;
+}
+
+.redes-sociales span {
+    margin-right: 10px;
+}
+
+.redes-sociales a {
+    margin-right: 10px;
+}
+
+.redes-sociales img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+/*  LOS SERVICIOS */
+
+.about-services {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+}
+
+.about-services .titulo {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.servicio-cont {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.servicio-ind {
+    flex: 1 1 30%;
+    max-width: 30%;
+    text-align: center;
+}
+
+.servicio-ind img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.servicio-ind:nth-child(1) img,
+.servicio-ind:nth-last-child(1) img {
+    margin-top: 40px; /* Ajusta este valor según sea necesario */
+}
+
+.servicio-ind h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.servicio-ind p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.Carrusel {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.Carrusel .titulo {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.slider-box {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.slider-box ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transition: transform 1s ease;
+}
+
+.slider-box li {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    height: 600px; 
+}
+
+.slider-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+    object-fit: cover;
+    display: block;
+}
+
+.slider-box div {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.slider-box h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+}
+
+.slider-box p {
+    margin: 0;
+}
+
+@keyframes slide {
+    /*0%, 20% { transform: translateX(0); }
+    25%, 45% { transform: translateX(-100%); }
+    50%, 70% { transform: translateX(-200%); }
+    75%, 95% { transform: translateX(-300%); }
+    100% { transform: translateX(0); }*/
+    0%, 12.5% { transform: translateX(0); }
+    12.5%, 25% { transform: translateX(-100%); }
+    25%, 37.5% { transform: translateX(-200%); }
+    37.5%, 50% { transform: translateX(-300%); }
+    50%, 62.5% { transform: translateX(-400%); }
+    62.5%, 75% { transform: translateX(-500%); }
+    75%, 87.5% { transform: translateX(-600%); }
+    87.5%, 100% { transform: translateX(-700%); }
+}
+
+.slider-box ul {
+    animation: slide 16s infinite;
+}
+
+.precios {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.precios .titulo {
+    font-size: 35px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.cartas-precios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.carta {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.carta:hover {
+    transform: translateY(-10px);
+}
+
+.carta h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.carta .precio {
+    font-size: 2em;
+    margin: 10px 0;
+    color: #8b0000; /* Color vino */
+}
+
+.carta p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/*cobertura*/
+.zonas-de-cobertura {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+.zonas-de-cobertura h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.ciudades {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ciudades li {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+
+/* FOOTER */
+
+footer{
+    background: #414141;
+    padding: 50px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.content-footer{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+/*ARTICULOS*/
+
+#headerArticulo{
+    background-color: #8b0000;
+    height: 120px;
+}
+
+#headerArticulo nav{
+    text-align: right;
+    padding: 20px 50px 0 0;
+}
+
+.titlePiso{
+    margin-top: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    background: #f2f2f2;
+    text-align: center;
+    font-size: 40px;
+}
+
+/*tarjetas*/
+.gallery-section{
+    background: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /*justify-content: center;*/
+    max-width: 1200px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(25% - 20px); /* 4 columnas con espacio entre ellas */
+    box-sizing: border-box;
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+
+.description {
+    padding: 15px;
+    text-align: center;
+}
+
+.description h3 {
+    margin: 0 0 10px;
+    font-size: 1.25em;
+}
+
+.description p {
+    margin: 0;
+    color: #666;
+}
+
+
+/*MAPA GOOGLE*/
+
+.mapa-ecuador {
+    padding: 20px;
+    background-color: #F9F9F9;
+    text-align: center;
+    margin-bottom: 70px;;
+}
+
+.titleMap {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.map-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.map-container iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .map-container iframe {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .map-container iframe {
+        height: 300px;
+    }
+}
