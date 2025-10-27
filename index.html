@@ -1,103 +1,245 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Parquet Los Andes</title>
-    <link rel="shortcut icon" href="/imagen/logo1.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="/CSS/style.CSS">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ChatGPT — Educación y Práctica Responsable</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="description" content="ChatGPT explicado para educación: qué es, cómo funciona, límites, buenas prácticas y papel en el aprendizaje.">
 </head>
 
 <body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Principal">
+      <a class="logo" href="index.html">
+        ChatGPT EDU
+      </a>
 
-    <header class="headerPrincipal">
-        <a href="#" class="logo">..</a>
-        <label for="menu">
-            <img src="/imagen/logo3.jfif" class="menuIcono" alt="">
-        </label>
-            <nav>
-                <a href="index.html">Inicio</a>
-                <a href="Diseño/articulos.html">Artículos</a>
-                <a href="Diseño/servicios.html">Servicios</a>
-                <a href="Diseño/acerca.html">Acerca</a>
-            </nav>
-        <section class="textos-header">
-            <h1>Parquet Los Andes</h1>
-            <h2>Experiencia, garantía y confianza</h2>
-        </section>
-        <div class="wave" style="height: 150px; overflow: hidden;" >
-            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                <path d="M-0.33,30.99 C151.47,221.93 220.31,38.87 501.35,56.59 L500.00,149.60 L-0.00,149.60 Z" style="stroke: none; fill: #f9f9f9;"></path>
-        </svg></div>
-    </header>
+      <ul class="menu" role="list">
+        <li><a class="active" href="index.html">Inicio</a></li>
+        <li><a href="capacidades.html">Capacidades</a></li>
+        <li><a href="funcionamiento.html">Funcionamiento</a></li>
+        <li><a href="impacto.html">Impacto</a></li>
+        <li><a href="academia.html">En la Educación</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section id="informacion">
-        <div class="contenidoInfo">
-            <h2>Información</h2><br>
-            <p>
-                "El crecimiento personal no es una meta que alcanzar, sino un camino que recorrer; 
-                cada paso que das te acerca más a quien quieres ser."
-                <br><br>
-                Descubre la excelencia en la colocación de pisos con Parquet Los Andes. Nos especializamos 
-                en transformar espacios con elegancia y precisión, ofreciendo soluciones innovadoras para tus proyectos 
-                residenciales y comerciales. Desde pisos de madera exquisitamente trabajados hasta la versatilidad de los 
-                pisos flotantes, nuestro compromiso con la calidad y el servicio excepcional nos distingue. ¡Explora nuestro 
-                mundo de posibilidades y haz realidad tu visión hoy mismo!
-            </p>
+  <main class="container">
+
+    <section class="hero card">
+      <div class="hero-grid">
+        <div>
+          <div class="badge" aria-label="Estado del modelo">
+            <span class="badge-dot"></span>
+            <span>Versión educativa · GPT-5 Thinking</span>
+          </div>
+
+          <h1>
+            ChatGPT para aprender, crear y pensar mejor
+          </h1>
+
+          <p class="lead">
+            Un modelo conversacional de IA creado por OpenAI. Puede explicar temas difíciles con lenguaje claro, generar ideas nuevas y ayudarte a construir cosas reales (código, ensayos, planes, etc.).
+          </p>
+
+          <p>
+            Este sitio es una presentación académica independiente. Aquí mostramos cómo funciona ChatGPT, qué puede hacer en el aula y cuáles son sus límites éticos. No es una página comercial.
+          </p>
+
+          <div style="display:flex; flex-wrap:wrap; gap:12px; margin-top:20px;">
+            <a class="btn" href="capacidades.html">
+              <span>Ver capacidades</span>
+              <span aria-hidden="true">→</span>
+            </a>
+
+            <a class="btn ghost" href="#timeline">
+              <span>Hitos del modelo</span>
+            </a>
+          </div>
         </div>
-        <!--<img class="img" src="/imagen/principal6.webp" alt="imagen">-->
+
+        <aside aria-label="Demostración de chat" class="feature" style="font-size:.9rem; line-height:1.4rem;">
+          <div class="chat-row user">
+            <div class="chat-avatar">CL</div>
+            <div class="bubble">
+              Necesito explicar "redes VLAN" pero para un público no técnico. ¿Me ayudas?
+            </div>
+          </div>
+
+          <div class="chat-row assistant">
+            <div class="chat-avatar">GPT</div>
+            <div class="bubble">
+              Claro. Imagina una misma oficina con muchas áreas distintas:
+              administración, soporte, contabilidad. Físicamente usan el mismo
+              cableado, pero con VLAN haces que parezca que cada área tiene su
+              propia red privada y segura, aunque todo viaje por el mismo switch.
+            </div>
+          </div>
+
+          <div class="chat-row user">
+            <div class="chat-avatar">CL</div>
+            <div class="bubble typing">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+
+          <div style="display:flex; align-items:center; font-size:.7rem; color:var(--c-dim); margin-top:8px;">
+            <span>Entrada de voz</span>
+            <div class="voice-indicator active" aria-hidden="true">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </aside>
+      </div>
     </section>
 
-    <section class="content sobre-nosotros">
-        <h2 class="titulo">Local</h2>
-        <div class="content-sobre-nosotros">
-            <img src="/imagen/padre.jpeg" alt="" class="imagen-about-us">
-            <div class="content-textos">
-                <h3><span>1</span>Visita el establecimiento</h3>
-                <p>Local que se especializa en la instalación de pisos de madera y pisos flotantes 
-                    ofrece una variedad de productos como pisos de madera maciza y parquet, 
-                    así como pisos flotantes de diversos estilos y acabados. El establecimiento cuenta con 
-                    un área de exhibición donde se muestran diferentes muestras y diseños, y ofrece 
-                    servicios profesionales de instalación que incluyen la preparación del suelo, nivelación, 
-                    y acabado. Además, ofrece asesoramiento personalizado para ayudar a los clientes a elegir el tipo de piso 
-                    adecuado según sus necesidades y presupuesto. Las promociones y una fuerte presencia en línea son estrategias 
-                    clave para atraer y mantener a los clientes.</p>
-            </div>
-        </div>
+    <section class="intro card" style="margin-top:24px;">
+      <h2 style="color:#fff; letter-spacing:-0.03em;">¿Quién está detrás?</h2>
+      <p class="lead" style="max-width:70ch;">
+        ChatGPT es desarrollado por OpenAI, una organización de investigación en inteligencia artificial. Su objetivo declarado es construir sistemas avanzados que sean útiles, seguros y beneficiosos para la sociedad, no solo potentes técnicamente. 
+      </p>
+
+      <h2 style="color:#fff; letter-spacing:-0.03em; margin-top:1.8rem;">¿Cómo fue entrenado?</h2>
+      <p>
+        El modelo aprende a partir de grandes volúmenes de texto, código y ejemplos producidos por personas. Después, instructores humanos revisan y ajustan respuestas para que sean más claras, útiles y seguras. A ese proceso se lo conoce como alineación.
+      </p>
+
+      <h2 style="color:#fff; letter-spacing:-0.03em; margin-top:1.8rem;">¿Por qué se volvió tan usado?</h2>
+      <p>
+        En noviembre de 2022 se liberó una versión conversacional pública. Eso hizo que cualquier persona —sin saber programar— pudiera pedirle a una IA que resumiera un artículo, redactara un correo formal, explicara un concepto académico con ejemplos sencillos o hasta generara fragmentos de código funcional. Esa accesibilidad disparó su adopción global en educación, trabajo y creación de contenido.
+      </p>
+      <h2 style="color:#fff; letter-spacing:-0.03em; margin-top:1.8rem;">Uso educativo y responsable</h2>
+      <p>
+        En el contexto universitario, ChatGPT debe entenderse como un asistente cognitivo y no como un sustituto del pensamiento humano. 
+        En la ESPOCH promovemos su uso ético, transparente y crítico: los estudiantes pueden apoyarse en la IA para comprender temas complejos, 
+        mejorar su redacción o explorar nuevas ideas, pero siempre manteniendo la autoría y el razonamiento propio.
+      </p>
+      <p>
+        Utilizar ChatGPT de forma responsable implica reconocer cuándo fue usada la herramienta, contrastar la información que genera y aplicar el criterio académico para validar sus resultados. 
+        Así, la inteligencia artificial se convierte en una aliada del aprendizaje significativo, no en una forma de dependencia tecnológica.
+      </p>
     </section>
 
-    <Section class="mapa-ecuador">
-        <h1 class="titleMap">Mapa de Ubicación</h1>
-        <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1527.1859412062754!2d-78.64553629092057!3d-1.6731800252274749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1718690932144!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <iframe src="https://www.google.com/maps/embed?pb=!4v1718691123232!6m8!1m7!1sQz2yKR4dgtFG9an1yUVplQ!2m2!1d-1.672796833386445!2d-78.64592347385701!3f86.29160515383153!4f-4.843586820067998!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </Section>
+    <section class="video card" style="margin-top:24px;">
+      <h3 style="color:#fff; letter-spacing:-0.03em;">Video: ¿Qué es ChatGPT?</h3>
+      <div class="video-wrap">
+        <iframe
+          src="https://www.youtube.com/embed/VIDEO_ID"
+          title="Introducción a ChatGPT"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+      <p style="font-size:.8rem; color:var(--c-dim); margin-top:12px;">
+        Este video es material de apoyo externo seleccionado con fines educativos.
+      </p>
+    </section>
 
-    <footer>
-        <div class="content-footer">
-            <div class="content-foo">
-                <h4>Teléfono</h4>
-                <p>0998659202</p>
-            </div>
-            <div class="content-foo">
-                <h4>Email</h4>
-                <p>luismoyano@hotmail.com</p>
-            </div>
-            <div class="content-foo">
-                <h4>Ubicación</h4>
-                <p>Juan de Velasco y Argentinos</p>
-            </div>
-        </div>
-        <h2 class="titulo-final">&copy;Parquet Los Andes | <a href="https://www.facebook.com/profile.php?id=100067973742798">
-            <img src="/imagen/facebook.png" alt="imagen">
-        
-    </footer>
+    <section class="timeline" id="timeline" aria-labelledby="timeline-title" style="margin-top:24px;">
+      <div class="timeline-header" id="timeline-title">Hitos del modelo</div>
 
+      <div class="timeline-rail" aria-hidden="true"></div>
+
+      <div class="timeline-items">
+        <article class="timeline-item" aria-label="Lanzamiento público, 2022">
+          <div class="timeline-icon">2022</div>
+          <div class="timeline-dot"></div>
+          <strong>Lanzamiento público</strong>
+          <span>
+            Primera versión abierta al público general. Millones de usuarios prueban conversación con IA.
+          </span>
+        </article>
+
+        <article class="timeline-item" aria-label="Uso masivo educativo y laboral, 2023">
+          <div class="timeline-icon">2023</div>
+          <div class="timeline-dot"></div>
+          <strong>Salto a estudio y trabajo</strong>
+          <span>
+            Docentes, estudiantes y equipos técnicos empiezan a integrarlo en tareas reales: resúmenes, debugging, guías paso a paso.
+          </span>
+        </article>
+
+        <article class="timeline-item" aria-label="Integración institucional, 2025">
+          <div class="timeline-icon">2025</div>
+          <div class="timeline-dot"></div>
+          <strong>Adopción institucional</strong>
+          <span>
+            Modelos más recientes (incluida la serie GPT-5 Thinking) empiezan a usarse con controles de privacidad, auditoría y planes educativos.
+          </span>
+        </article>
+      </div>
+    </section>
+    <section class="card" style="margin-top:24px; text-align:center;">
+      <h2 style="color:#fff;">Reflexión final</h2>
+      <p style="max-width:70ch; margin:auto;">
+        Como grupo académico de la ESPOCH, utilizamos ChatGPT de forma responsable, 
+        valorando su potencial para reforzar el aprendizaje, estimular la creatividad y fomentar la investigación. 
+        No lo empleamos para reemplazar el esfuerzo personal, sino como un medio para potenciar la comprensión y la capacidad crítica en nuestra formación profesional.
+      </p>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-accent"></div>
+
+    <div class="footer-inner">
+
+      <div class="footer-col brand-col">
+        <div class="footer-logo">
+          <span class="footer-logo-icon">💬</span>
+          <span class="footer-logo-text">ChatGPT EDU</span>
+        </div>
+        <p class="footer-desc">
+          Inteligencia Artificial aplicada al proceso de aprendizaje.
+          Este sitio analiza a ChatGPT como herramienta académica.
+        </p>
+      </div>
+
+      <div class="footer-col project-col">
+        <h4 class="footer-heading">Proyecto académico</h4>
+        <p class="footer-text">
+          Asignatura:<br>
+          Desarrollo y Operaciones de Software
+        </p>
+        <p class="footer-text">
+          Facultad:<br>
+          Informática y Electrónica
+        </p>
+      </div>
+
+      <div class="footer-col team-col">
+        <h4 class="footer-heading">Equipo</h4>
+        <ul class="footer-list">
+          <li>Daniela Albán</li>
+          <li>Scarlet Cayapa</li>
+          <li>Kelly Lema</li>
+          <li>Carla Lomas</li>
+          <li>Katty Moyano</li>
+        </ul>
+      </div>
+
+      <div class="footer-col meta-col">
+        <h4 class="footer-heading">Año académico</h4>
+        <p class="footer-text">
+          © 2025<br>
+          Septiembre 2025 – Enero 2026
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-bottom-text">
+        Escuela Superior Politécnica de Chimborazo — ESPOCH.<br><br>
+        Este sitio tiene fines académicos y promueve el uso ético de la inteligencia artificial.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
-
-
 </html>
